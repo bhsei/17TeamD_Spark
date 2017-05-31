@@ -1,0 +1,13 @@
+<html>
+<head>
+<script>
+var ws = new WebSocket('ws://localhost:8181/');
+ws.onopen = function(e){
+  console.log('connection to server opend');
+}
+function sendMessage(){
+   ws.send('send message');
+}
+</script>
+</head>
+</html>
